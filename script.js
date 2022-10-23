@@ -1,15 +1,21 @@
-let res = (prompt("Ingrese su nombre y apellido"))
-console.log (res)
+let nombre = (prompt("Ingrese su nombre"))
+console.log (nombre)
 
-alert("Bienvenido " + res)
+alert("Bienvenido " + nombre)
 
 let edad = parseInt(prompt("Ingrese su edad"))
 
+function validarEdad(edad){
 if (edad <= 18) {
-    alert("No podes continuar con el juego")
+    alert("No puedes continuar con el juego")
 }
 
 else{
+    alert("Puedes continuar con el juego")
+}
+}
+validarEdad(edad)
+if (edad >= 18) {
     let deporte = (prompt("Cual es tu deporte favorito 1-Futbol 2-Basquetball"))
 
     if (deporte == 1) {
@@ -33,7 +39,8 @@ else{
             array.push(equipo)
             console.log(equipo)
         }
-        alert("Estos son los equipos de Basquetball que conoces" + array)
+        alert("Estos son los equipos de Basquetball que conoces " + array)
+    
     }
-
 }
+
